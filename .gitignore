@@ -1,0 +1,10 @@
+*.suo
+*.user
+
+/*/AppPackages/
+/*/bin/
+/*/bld/
+/*/obj/
+
+/WinRSJS.Test/js/**/*.js
+/WinRSJS.Test/js/**/*.js.map
