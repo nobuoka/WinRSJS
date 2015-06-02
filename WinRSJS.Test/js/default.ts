@@ -1,5 +1,6 @@
-﻿/// <reference path="..\..\WinRSJS.TypeScript\winrsjs.d.ts" />
-/// <reference path="..\ts-definitions/winjs.d.ts" />
+﻿/// <reference path="..\..\WinRSJS.TypeScript\ts-definitions\winrt.d.ts" />
+/// <reference path="..\..\WinRSJS.TypeScript\winrsjs.ts" />
+/// <reference path="..\ts-definitions\winjs.d.ts" />
 /// <reference path="..\ts-definitions\mocha.d.ts" />
 
 // For an introduction to the Blank template, see the following documentation:

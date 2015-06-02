@@ -57,7 +57,7 @@
   </PropertyGroup>
   <ItemGroup>
     <TypeScriptCompile Include="ts-definitions\winrt.d.ts" />
-    <TypeScriptCompile Include="winrsjs.d.ts" />
+    <TypeScriptCompile Include="winrsjs.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
 </Project>
