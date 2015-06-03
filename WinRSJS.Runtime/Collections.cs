@@ -5,7 +5,7 @@ namespace WinRSJS
 {
     public sealed class Collections
     {
-        static public object /* IMap<?, ?> */ createMap(string keyTypeName, string valTypeName)
+        static public object /* IMap<?, ?> */ CreateMap(string keyTypeName, string valTypeName)
         {
             Type typeKey = Type.GetType(keyTypeName);
             if (typeKey == null)
