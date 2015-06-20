@@ -14371,6 +14371,7 @@ declare module Windows.Web.Http { // TODO: Not completed.
     export interface IHttpContent extends Windows.Foundation.IClosable { // TODO: Not completed.
         headers: Headers.HttpContentHeaderCollection;
         readAsStringAsync(): Windows.Foundation.IAsyncOperationWithProgress<string, number>;
+        readAsBufferAsync(): Windows.Foundation.IAsyncOperationWithProgress<Windows.Storage.Streams.IBuffer, number>;
         readAsInputStreamAsync(): Windows.Foundation.IAsyncOperationWithProgress<Windows.Storage.Streams.IInputStream, number>;
     }
 
@@ -14383,6 +14384,7 @@ declare module Windows.Web.Http { // TODO: Not completed.
         close(): void;
         headers: Headers.HttpContentHeaderCollection;
         readAsStringAsync(): Windows.Foundation.IAsyncOperationWithProgress<string, number>;
+        readAsBufferAsync(): Windows.Foundation.IAsyncOperationWithProgress<Windows.Storage.Streams.IBuffer, number>;
         readAsInputStreamAsync(): Windows.Foundation.IAsyncOperationWithProgress<Windows.Storage.Streams.IInputStream, number>;
     }
 

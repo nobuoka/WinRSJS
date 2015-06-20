@@ -14,7 +14,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.markdown = README.markdown
 	EndProjectSection
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WinRSJS.Shared", "WinRSJS.Shared\WinRSJS.Shared.shproj", "{6C29664C-319A-4742-89E4-D7B21313A37D}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		WinRSJS.Shared\WinRSJS.Shared.projitems*{6c29664c-319a-4742-89e4-d7b21313a37d}*SharedItemsImports = 13
+		WinRSJS.Shared\WinRSJS.Shared.projitems*{12c970c7-d9f6-4d7f-ae83-d7cdcffbebac}*SharedItemsImports = 5
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM

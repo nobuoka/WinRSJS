@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6c29664c-319a-4742-89e4-d7b21313a37d</SharedGUID>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)js\winrsjs.d.ts" />
+    <Content Include="$(MSBuildThisFileDirectory)js\winrsjs.js" />
+    <Content Include="$(MSBuildThisFileDirectory)js\winrsjs.js.map" />
+  </ItemGroup>
+</Project>
