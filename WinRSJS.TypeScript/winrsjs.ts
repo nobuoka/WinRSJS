@@ -50,8 +50,9 @@ module WinRSJS.HttpUtils {
 
     export function readContentAsync(content: Windows.Web.Http.IHttpContent): Windows.Foundation.IPromise<HttpContent> {
         return content.readAsBufferAsync().then((buffer) => {
+            var bytes = new Uint8Array(buffer.length);
             var dataReader = Windows.Storage.Streams.DataReader.fromBuffer(buffer);
-            var bytes = dataReader.readBytes();
+            dataReader.readBytes(bytes);
             dataReader.close();
             return {
                 type: content.headers.contentType,
