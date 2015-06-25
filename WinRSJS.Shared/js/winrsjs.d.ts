@@ -2,6 +2,9 @@ declare module WinRSJS {
     module Collections {
         function createMap(keyType: string, valType: string): Windows.Foundation.Collections.IMap<any, any>;
     }
+    module WindowsRuntimeBuffer {
+        function create(capacity: number): Windows.Storage.Streams.IBuffer;
+    }
 }
 declare module WinRSJS {
     var log: {
@@ -20,7 +23,7 @@ declare module WinRSJS.HResults {
 declare module WinRSJS.HttpUtils {
     interface HttpContent {
         type: Windows.Web.Http.Headers.HttpMediaTypeHeaderValue;
-        data: Uint8Array;
+        data: Windows.Storage.Streams.IBuffer;
     }
     interface HttpError extends Error {
         statusCode: number;

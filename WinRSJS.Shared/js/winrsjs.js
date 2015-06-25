@@ -34,13 +34,9 @@ var WinRSJS;
         var Uri = Windows.Foundation.Uri;
         function readContentAsync(content) {
             return content.readAsBufferAsync().then(function (buffer) {
-                var bytes = new Uint8Array(buffer.length);
-                var dataReader = Windows.Storage.Streams.DataReader.fromBuffer(buffer);
-                dataReader.readBytes(bytes);
-                dataReader.close();
                 return {
                     type: content.headers.contentType,
-                    data: bytes,
+                    data: buffer,
                 };
             });
         }
