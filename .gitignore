@@ -8,3 +8,5 @@
 
 /WinRSJS.Test/js/**/*.js
 /WinRSJS.Test/js/**/*.js.map
+/WinRSJS.TypeScript/winrsjs.js
+/WinRSJS.TypeScript/winrsjs.js.map
