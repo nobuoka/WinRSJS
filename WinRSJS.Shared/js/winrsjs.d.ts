@@ -2,6 +2,9 @@ declare module WinRSJS {
     module Collections {
         function createMap(keyType: string, valType: string): Windows.Foundation.Collections.IMap<any, any>;
     }
+    module Guid {
+        function newGuid(): string;
+    }
     module WindowsRuntimeBuffer {
         function create(capacity: number): Windows.Storage.Streams.IBuffer;
     }
