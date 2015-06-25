@@ -36,7 +36,7 @@ module WinRSJS.HttpUtils {
 
     export interface HttpContent {
         type: Windows.Web.Http.Headers.HttpMediaTypeHeaderValue;
-        data: Uint8Array;
+        data: Windows.Storage.Streams.IBuffer;
     }
 
     export interface HttpError extends Error {
@@ -50,13 +50,9 @@ module WinRSJS.HttpUtils {
 
     export function readContentAsync(content: Windows.Web.Http.IHttpContent): Windows.Foundation.IPromise<HttpContent> {
         return content.readAsBufferAsync().then((buffer) => {
-            var bytes = new Uint8Array(buffer.length);
-            var dataReader = Windows.Storage.Streams.DataReader.fromBuffer(buffer);
-            dataReader.readBytes(bytes);
-            dataReader.close();
             return {
                 type: content.headers.contentType,
-                data: bytes,
+                data: buffer,
             };
         });
     }
