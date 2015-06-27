@@ -44,9 +44,7 @@
     <Compile Include="WindowsRuntimeBuffer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\WinRSJS.Shared\js\winrsjs.js">
-      <Link>js\winrsjs.js</Link>
-    </Content>
+    <Content Include="js\winrsjs.js" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

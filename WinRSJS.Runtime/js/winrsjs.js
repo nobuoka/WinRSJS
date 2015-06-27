@@ -1,4 +1,4 @@
-/*
+﻿/*
 Copyright 2015 Yu Nobuoka
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -230,4 +230,3 @@ var WinRSJS;
         GoogleAnalytics.GAClient = GAClient;
     })(GoogleAnalytics = WinRSJS.GoogleAnalytics || (WinRSJS.GoogleAnalytics = {}));
 })(WinRSJS || (WinRSJS = {}));
-//# sourceMappingURL=winrsjs.js.map

@@ -1,4 +1,4 @@
-﻿/// <reference path="..\..\..\WinRSJS.TypeScript\winrsjs.ts" />
+﻿/// <reference path="..\..\..\WinRSJS.TypeScript\built\winrsjs.d.ts" />
 
 /// <reference path="..\..\ts-definitions\mocha.d.ts" />
 /// <reference path="..\..\ts-definitions\chai.d.ts" />

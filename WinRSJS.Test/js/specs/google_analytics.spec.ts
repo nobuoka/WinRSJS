@@ -1,5 +1,5 @@
 ﻿/// <reference path="..\..\..\WinRSJS.TypeScript\ts-definitions\winrt.d.ts" />
-/// <reference path="..\..\..\WinRSJS.TypeScript\winrsjs.ts" />
+/// <reference path="..\..\..\WinRSJS.TypeScript\built\winrsjs.d.ts" />
 
 /// <reference path="..\..\ts-definitions\winjs.d.ts" />
 /// <reference path="..\..\ts-definitions\mocha.d.ts" />

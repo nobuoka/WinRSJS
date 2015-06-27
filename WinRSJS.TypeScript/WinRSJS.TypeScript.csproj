@@ -48,7 +48,7 @@
   </ProjectExtensions>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
-    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
     <TypeScriptNoImplicitAny>True</TypeScriptNoImplicitAny>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
@@ -56,12 +56,16 @@
     <TypeScriptSourceMap>false</TypeScriptSourceMap>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="built\winrsjs.d.ts" />
     <TypeScriptCompile Include="ts-definitions\winrt.d.ts" />
     <TypeScriptCompile Include="winrsjs.ts" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <TypeScriptOutFile>..\WinRSJS.Shared\js\winrsjs.js</TypeScriptOutFile>
+    <TypeScriptOutFile>.\built\winrsjs.js</TypeScriptOutFile>
     <TypeScriptGeneratesDeclarations>True</TypeScriptGeneratesDeclarations>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>powershell -Command "Get-Content -Encoding UTF8 '$(ProjectDir)built\winrsjs.js' | Set-Content -Encoding UTF8 '$(SolutionDir)WinRSJS.Runtime\js\winrsjs.js'"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

@@ -91,7 +91,6 @@
     <ProjectReference Include="..\WinRSJS.Runtime\WinRSJS.Runtime.csproj" />
     <ProjectReference Include="..\WinRSJS.TypeScript\WinRSJS.TypeScript.csproj" />
   </ItemGroup>
-  <Import Project="..\WinRSJS.Shared\WinRSJS.Shared.projitems" Label="Shared" Condition="Exists('..\WinRSJS.Shared\WinRSJS.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.jsproj.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.jsproj.targets')" />
