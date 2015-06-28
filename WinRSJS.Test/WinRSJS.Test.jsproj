@@ -89,7 +89,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WinRSJS.Runtime\WinRSJS.Runtime.csproj" />
-    <ProjectReference Include="..\WinRSJS.TypeScript\WinRSJS.TypeScript.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
