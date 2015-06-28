@@ -75,6 +75,10 @@
     <Content Include="lib\mocha.css" />
     <Content Include="lib\mocha.js" />
     <TypeScriptCompile Include="js\default.ts" />
+    <TypeScriptCompile Include="js\specs\guid.spec.ts" />
+    <TypeScriptCompile Include="js\specs\windows_runtime_buffer.spec.ts" />
+    <TypeScriptCompile Include="js\specs\google_analytics.spec.ts" />
+    <TypeScriptCompile Include="js\specs\hresults.spec.ts" />
     <TypeScriptCompile Include="js\specs\collections.spec.ts" />
     <TypeScriptCompile Include="ts-definitions\chai.d.ts" />
     <TypeScriptCompile Include="ts-definitions\mocha.d.ts" />
