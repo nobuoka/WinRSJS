@@ -52,7 +52,7 @@ describe("`WinRSJS.GoogleAnalytics.GAClient` object", () => {
         postWwwFormUrlEncodedContentCalled.push([uri, data]);
         return WinJS.Promise.wrap({
             type: new Windows.Web.Http.Headers.HttpMediaTypeHeaderValue("text/plain"),
-            data: WinRSJS.WindowsRuntimeBuffer.create(0),
+            data: new Windows.Storage.Streams.Buffer(0),
         });
     };
     gaClient.screeenInfoAccessors = new ScreenInfoAccessorsMock({ sw: 640, sh: 480, vw: 320, vh: 240 });

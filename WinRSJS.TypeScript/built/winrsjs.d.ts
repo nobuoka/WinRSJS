@@ -5,9 +5,6 @@ declare module WinRSJS {
     module Guid {
         function newGuid(): string;
     }
-    module WindowsRuntimeBuffer {
-        function create(capacity: number): Windows.Storage.Streams.IBuffer;
-    }
 }
 declare module WinRSJS {
     var log: {
